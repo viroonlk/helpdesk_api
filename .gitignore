@@ -1,0 +1,22 @@
+# .gitignore
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual Environment (สำคัญมาก!)
+venv/
+
+# Database (ห้าม Push ขึ้นเด็ดขาด!)
+*.sqlite3
+db.sqlite3
+
+# Environment variables (ถ้ามี)
+.env
+
+# VS Code settings (ไม่จำเป็นต้องแชร์)
+.vscode/
+
+# Static files (ถ้ามี)
+staticfiles/
+media/
