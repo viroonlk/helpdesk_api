@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // 4. ถ้าสมัครสำเร็จ (201 Created)
                 alert("Registration successful! You will now be redirected to the login page.");
                 // 5. พาไปหน้า Login
-                window.location.href = "login.html";
+                window.location.href = "index.html";
 
             } else {
                 // 6. ถ้า Error (เช่น 400 Bad Request)
