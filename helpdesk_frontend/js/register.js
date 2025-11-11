@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
             // 3. ยิง API ไปที่ Endpoint สมัครสมาชิก
-            const response = await fetch("http://127.0.0.1:8000/api/register/", {
+            const response = await fetch("https://helpdesk-api-z5q9.onrender.com/api/register/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
