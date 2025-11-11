@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // 4. สร้างฟังก์ชันสำหรับดึง Ticket
     async function fetchTickets() {
         try {
-            const response = await fetch("http://127.0.0.1:8000/api/tickets/", {
+            const response = await fetch("https://helpdesk-api-z5q9.onrender.com/api/tickets/", {
                 method: "GET",
                 headers: {
                     // 5. "แนบ" Token ไปใน Header เพื่อยืนยันตัวตน

@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
             // 4. "ยิง" API ไปที่ Django (นี่คือส่วนที่สำคัญที่สุด)
-            const response = await fetch("http://127.0.0.1:8000/api/token/", {
+            const response = await fetch("https://helpdesk-api-z5q9.onrender.com/api/token/", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
