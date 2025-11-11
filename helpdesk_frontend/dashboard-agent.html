@@ -2,68 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-R-8">
-    <title>Agent Dashboard</title>
+    <title>Agent Dashboard - Ticket Queue</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* สไตล์ตารางสำหรับ Agent */
-        .ticket-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        .ticket-table th, .ticket-table td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #EEE;
-            text-align: left;
-        }
-        .ticket-table thead th {
-            background-color: #F9FAFB;
-            color: #555;
-            font-size: 14px;
-        }
-        .ticket-table tbody tr:hover {
-            background-color: #F5F5F5;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
-        <h1>Ticket Queue</h1>
-        <div class="card">
-            <table class="ticket-table" id="ticket-table">
-                <thead>
-                    <tr>
-                        <th>Title</th>
-                        <th>Status</th>
-                        <th>Priority</th>
-                        <th>Created By</th>
-                        <th>Assigned To</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>My PC is broken!</td>
-                        <td><span class="status-tag status-open">OPEN</span></td>
-                        <td>HIGH</td>
-                        <td>testuser</td>
-                        <td>(unassigned)</td>
-                    </tr>
-                    <tr>
-                        <td>Cannot connect to network</td>
-                        <td><span class="status-tag status-progress">IN_PROGRESS</span></td>
-                        <td>MEDIUM</td>
-                        <td>jane_doe</td>
-                        <td>agent_bob</td>
-                    </tr>
-                    <tr>
-                        <td>Need Photoshop license</td>
-                        <td><span class="status-tag status-closed">CLOSED</span></td>
-                        <td>LOW</td>
-                        <td>testuser</td>
-                        <td>agent_alice</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <h1>Agent Queue (All Tickets)</h1>
+            <div>
+                <button class="btn" id="logout-btn" style="background-color: #eee;">
+                    Logout (Agent)
+                </button>
+            </div>
+        </div>
+
+        <div class="card-list" id="ticket-list">
+            <p style="text-align: center; padding: 20px;">Loading ticket queue...</p>
         </div>
     </div>
+
+    <script src="js/api.js" defer></script>
+    <script src="js/dashboard.js" defer></script>
 </body>
 </html>

@@ -9,17 +9,22 @@
     <div class="container">
         <div style="display: flex; justify-content: space-between; align-items: center;">
             <h1>My Tickets</h1>
-            <button class="btn btn-primary" id="create-ticket-btn">
-                + Create New Ticket
-            </button>
+            <div>
+                <button class="btn btn-primary" id="create-ticket-btn" style="margin-left: 10px;">
+                    + Create New Ticket
+                </button>
+                <button class="btn" id="logout-btn" style="background-color: #eee;">
+                    Logout
+                </button>
+            </div>
         </div>
 
         <div class="card-list" id="ticket-list">
             <p style="text-align: center; padding: 20px;">Loading tickets...</p>
         </div>
-
     </div>
 
+    <script src="js/api.js" defer></script>
     <script src="js/dashboard-user.js" defer></script>
 </body>
 </html>

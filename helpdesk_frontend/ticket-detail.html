@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-R-8">
+    <title>Ticket Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="ticket-details">
+            <p style="text-align: center; padding: 20px;">Loading ticket details...</p>
+        </div>
+        
+        <hr>
+
+        <h3>Comments</h3>
+        <div id="comments-list">
+            </div>
+
+        <form id="comment-form">
+            <h4>Add a Reply</h4>
+            <div class="form-group">
+                <textarea id="comment-text" rows="4" required></textarea>
+            </div>
+            <div id="comment-message"></div>
+            <button type="submit" class="btn btn-primary" id="comment-submit-btn">Submit Reply</button>
+        </form>
+
+        <a href="mytickets.html" style="display: block; margin-top: 20px;">&larr; Back to all tickets</a>
+    </div>
+
+    <script src="js/api.js" defer></script>
+    <script src="js/ticket-detail.js" defer></script>
+</body>
+</html>
