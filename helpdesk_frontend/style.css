@@ -118,3 +118,56 @@ textarea {
     margin-left: 8px;
     color: #888;
 }
+
+/* --- 
+   โค้ดสำหรับเพิ่ม (สำหรับหน้า Login/Register)
+--- */
+
+/* 1. ทำให้ body เต็มจอและจัดกลาง */
+.full-center-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8; /* ธีมสีฟ้าอ่อนๆ */
+    padding: 0; /* ล้าง padding เดิมของ body */
+}
+
+/* 2. กำหนดขนาดกล่อง Login ให้เหมาะสม */
+.auth-container {
+    max-width: 400px; /* จำกัดความกว้างกล่อง login */
+    width: 100%;
+    margin: 20px;
+    padding: 30px; /* เพิ่ม padding ภายใน */
+}
+
+/* 3. ทำให้ปุ่ม Login เต็มความกว้าง */
+.auth-container .btn-primary {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* 4. เพิ่ม Hover Effect ให้ปุ่ม (สีฟ้าเข้มขึ้น) */
+.btn-primary:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+/* 5. ปรับสไตล์ลิงก์ "Create one" */
+.auth-container p a {
+    color: #007bff; /* สีฟ้า */
+    text-decoration: none;
+    font-weight: 500;
+}
+.auth-container p a:hover {
+    text-decoration: underline;
+}
+
+/* 6. (แนะนำ) สไตล์สำหรับข้อความ Error (จาก #form-message) */
+#form-message {
+    color: #dc3545; /* สีแดง */
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px; /* เว้นช่องว่างก่อนปุ่ม */
+    min-height: 1.2em; /* จองที่ไว้ กันปุ่มกระโดด */
+}
